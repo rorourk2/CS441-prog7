@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button s=findViewById(R.id.button);
         Button s2=findViewById(R.id.button2);
-
+        Button s3=findViewById(R.id.button3);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -34,7 +34,12 @@ public class MainActivity extends AppCompatActivity {
                 startLeaderActivity();
             }
         });
-
+        s3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startGameActivity();
+            }
+        });
     }
 
     @Override
@@ -67,6 +72,12 @@ public class MainActivity extends AppCompatActivity {
     }
     public void startLeaderActivity(){
         Intent intent = new Intent(this, LearderBoard.class);
+        //intent.putExtra("the",x);
+        startActivity(intent);
+    }
+
+    public void startGameActivity(){
+        Intent intent = new Intent(this, GameActivity.class);
         //intent.putExtra("the",x);
         startActivity(intent);
     }
