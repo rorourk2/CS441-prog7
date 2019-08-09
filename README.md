@@ -1,13 +1,14 @@
-# CS441-prog6
+# CS441-prog7
 
-This app is the wrapper for the eventual game I will make.
-It begins with a splash screen of fire.
-the user can navigate between the game screen placeholder, the leader board, and the instructions.
+The goal of the game is to keep the knight alive for as long as possible. 
+You can click to move the knight in a new direction
+the four fire balls will bounce around the screen and will send you to the leader board screen if they hit you.
+The leader board records the games score if it is in the top 10.
 
-7/21 - created Repository
+8/4 - created repository and moved project wrapper into the new repository
 
-7/24 - created Studio and added initial buttons
+8/7 - created a main menu connecting to the game
 
-7/25 - added leader board format
+8/8 - began adding game objects setups
 
-7/26 - added splash screen, instructions, button function, and leader board saving
+8/9 - added movement and lose conditions. Added in the animation. Fixed the bug with the Leader Board that had it print out scores in the wrong order.
